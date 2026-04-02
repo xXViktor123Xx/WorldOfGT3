@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorldOfGT3Form</title>
+    <link rel="stylesheet" href="CSS/Form.css" />
+    <link rel="icon" href="images/WorldOfGT3.png" type="image/x-icon" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <form>
+      <h2>Kontakta oss</h2>
+
+      <label for="name">First Name</label>
+      <input
+        type="text"
+        id="fname"
+        name="firstname"
+        placeholder="Your name.."
+      />
+
+      <label for="name">Efternamn</label>
+      <input
+        type="text"
+        id="efternamn"
+        name="Efternamn"
+        placeholder="Skriv in ditt efternamn.."
+      />
+
+      <label for="Mail">Mail</label>
+      <input
+        type="text"
+        id="Mail"
+        name="Mail"
+        placeholder="Skriv din mail..."
+      />
+    </form>
+
+    <a href="Tack.html">
+      <button>Sicka</button>
+    </a>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiYmlrdG9yMTIzIiwiYSI6ImNtbmhiOHY1NzAwdXkycXNtbnYwbzNtYWUifQ.20rirDHbVmTLkN0_c2UQQg";
+
+      const map = new mapboxgl.Map({
+        container: "map",
+        center: [18.06359, 59.44032],
+        zoom: 14,
+      });
+    </script>
+  </body>
+</html>
