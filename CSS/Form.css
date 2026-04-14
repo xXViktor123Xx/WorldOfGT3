@@ -1,14 +1,54 @@
-body{
-    background-color:rgb(15, 52, 96);
+body {
+  background-color: rgb(15, 52, 96);
+  margin: 0;
+}
+
+
+.underblock {
+  margin-top:0.5%;
+  margin-left: 33%;
+  flex-direction: column;
+  padding: 30px;
+  width: 350px;     
+  background-color: rgb(50, 53, 105);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+
+.kontakt {
+  color: aliceblue;
+  font-size: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  display: block;
+}
+
+
+#map {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+
+h1 {
+  text-align: center;
+  color: white;
+  font: inherit;
+}
+
+
+button {
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
 }
 
 button:hover {
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.15);
-}
-#map{
-position: absolute;
-width: 200px; 
-height: 200px;
-margin-top: 10%;
 }

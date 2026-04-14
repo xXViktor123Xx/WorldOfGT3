@@ -4,7 +4,50 @@ html {
 
 body{
   margin: 0;
+  background: linear-gradient(to bottom, #010a14, #1c2841);
 }
+
+
+.bar {
+  position:sticky;
+  top: 0;
+  width: 98..3%;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  z-index: 100;
+}
+
+.bar h2 {
+  margin: 0;
+}
+
+.bar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.bar a:hover {
+  text-decoration: underline;
+  color:rgb(239, 222, 201)
+}
+bar button {
+  background: none;
+  border: none;
+  color: white;
+  font: inherit;        
+  cursor: pointer;
+}
+
+bar button:hover {
+  text-decoration: underline;
+  color: rgb(239, 222, 201);
+}
+
 
 .header {
   position: relative;
@@ -54,50 +97,83 @@ body{
   color: rgb(255, 255, 255);
   font-size: 20px;
   margin: 2%;
-
 }
 
-.bar {
-  position:sticky;
-  top: 0;
-  width: 98..3%;
-  background: rgba(0, 0, 0, 0.9);
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 10px;
-  z-index: 100;
-}
-
-.bar h2 {
-  margin: 0;
-}
-
-.bar a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-}
-
-.bar a:hover {
-  text-decoration: underline;
-  color:rgb(239, 222, 201)
-}
-
-
-button{
-#den ska se lika dan ut som alla andra länkar. 
-}
-
-button:hover{
-  text-decoration: underline;
-  color:rgb(239, 222, 201)
-}
-
-.footer {
+#shoppen{
   text-align: center;
-  padding: 3px;
-  background-color: rgb(22,33,62);
-  color: white;
+  color: rgb(255, 255, 255);
+  font-size: 300%;
+}
+
+#Porsche992{
+  position: relative;
+  margin-left: 4%;
+  margin-top: 4%;
+  border-radius: 15px;
+}
+
+.porsche911 p{
+  width: 45%;
+  text-align: left;
+  margin-left: 35%;
+  margin-top: -15%;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+
+}
+
+
+#FerrariGT3{
+  width: 280px;
+  margin-left: 74%;
+  margin-top: 10%;
+  border-radius: 15px;
+
+}
+
+.FerrariGT3 p{
+  width: 45%;
+  text-align: left;
+  margin-left: 35%;
+  margin-top: -15%;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+
+   #intresse {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #intresse:hover {
+      background-color: #45a049;
+    }
+
+    #intresse:active {
+      transform: scale(0.98);
+    }
+  
+
+}
+
+footer{
+  background-color: #041932;
+}
+
+footer p{
+  position: absolute;
+  text-align: center;
+  margin-left: 30%;
+  color: #FFFCFC;
+  font-size: 10px;
+
+}
+
+#intresse{
+  cursor: pointer;
 }

@@ -13,47 +13,47 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.js"></script>
   </head>
   <body>
-    <div id="map"></div>
-    <form>
-      <h2>Kontakta oss</h2>
+    <div class="underblock">
+      <h1>Kontakta oss</h1>
 
-      <label for="name">First Name</label>
-      <input
-        type="text"
-        id="fname"
-        name="firstname"
-        placeholder="Your name.."
-      />
+      <form action="Tack.html">
+        <div class="kontakt">
+          <label>Förnamn</label>
+          <input type="text" placeholder="Skriv in ditt förnamn.." required />
 
-      <label for="name">Efternamn</label>
-      <input
-        type="text"
-        id="efternamn"
-        name="Efternamn"
-        placeholder="Skriv in ditt efternamn.."
-      />
+          <label>Efternamn</label>
+          <input type="text" placeholder="Skriv in ditt efternamn.." required />
 
-      <label for="Mail">Mail</label>
-      <input
-        type="text"
-        id="Mail"
-        name="Mail"
-        placeholder="Skriv din mail..."
-      />
-    </form>
+          <label>Mail</label>
+          <input type="”email”" placeholder="Skriv in din mail.." required />
 
-    <a href="Tack.html">
-      <button>Sicka</button>
-    </a>
-    <script>
-      mapboxgl.accessToken =
-        "pk.eyJ1IjoiYmlrdG9yMTIzIiwiYSI6ImNtbmhiOHY1NzAwdXkycXNtbnYwbzNtYWUifQ.20rirDHbVmTLkN0_c2UQQg";
+          <label>Meddelande</label>
+          <input
+            type="text"
+            placeholder="Skriv ditt meddelande här.."
+            required
+          />
 
-      const map = new mapboxgl.Map({
-        container: "map",
-        center: [18.06359, 59.44032],
-        zoom: 14,
-      });
-    </script>
+          <button type="submit">Skicka</button>
+        </div>
+      </form>
+
+      <div id="map"></div>
+    </div>
+
+    <footer>
+      <div class="mapfooter">
+        <script>
+          mapboxgl.accessToken =
+            "pk.eyJ1IjoiYmlrdG9yMTIzIiwiYSI6ImNtbmhiOHY1NzAwdXkycXNtbnYwbzNtYWUifQ.20rirDHbVmTLkN0_c2UQQg";
+
+          const map = new mapboxgl.Map({
+            container: "map",
+            center: [18.06354, 59.44027],
+            zoom: 15,
+          });
+        </script>
+      </div>
+    </footer>
   </body>
 </html>
