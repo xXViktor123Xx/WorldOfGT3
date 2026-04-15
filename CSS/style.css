@@ -7,11 +7,10 @@ body{
   background: linear-gradient(to bottom, #010a14, #1c2841);
 }
 
-
 .bar {
-  position:sticky;
+  position: sticky;
   top: 0;
-  width: 98..3%;
+  width: 100%; 
   background: rgba(0, 0, 0, 0.9);
   color: white;
   display: flex;
@@ -19,6 +18,11 @@ body{
   align-items: center;
   padding: 15px 10px;
   z-index: 100;
+}
+
+.bar nav {
+  display: flex; 
+  align-items: center;
 }
 
 .bar h2 {
@@ -32,10 +36,12 @@ body{
 }
 
 .bar a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color:rgb(239, 222, 201)
 }
-bar button {
+
+
+.bar button {
   background: none;
   border: none;
   color: white;
@@ -43,14 +49,10 @@ bar button {
   cursor: pointer;
 }
 
-bar button:hover {
-  text-decoration: underline;
-  color: rgb(239, 222, 201);
-}
-
 
 .header {
   position: relative;
+  display: flex;
 }
 
 .header h1 {
@@ -72,21 +74,24 @@ bar button:hover {
   font-size: 50px;
   margin: 0;
 }
+
 #Porsche { 
-    width: 100%; 
-    height: 565px; 
-    display: block; 
+  width: 100%; 
+  height: 565px; 
+  object-fit: cover;
 }
 
 #Ferrari{ 
-    width: 100%; 
-    height: 565px; 
-    display: block; 
-    position: static;
+  width: 100%; 
+  height: 565px; 
+  display: block; 
+  position: static;
 }
 
 .Ferrai {
-    position: relative;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .sidetext{
@@ -105,64 +110,38 @@ bar button:hover {
   font-size: 300%;
 }
 
-#Porsche992{
-  position: relative;
-  margin-left: 4%;
-  margin-top: 4%;
+
+.porsche911,
+.FerrariGT3 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 600px;
+}
+
+
+
+#Porsche992,
+#FerrariGT3 {
+  width: 300px;
   border-radius: 15px;
 }
 
-.porsche911 p{
+.porsche911 p,
+.FerrariGT3 p {
   width: 45%;
-  text-align: left;
-  margin-left: 35%;
-  margin-top: -15%;
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 20px;
-
+  flex-wrap: wrap;
 }
 
-
-#FerrariGT3{
-  width: 280px;
-  margin-left: 74%;
-  margin-top: 10%;
-  border-radius: 15px;
-
-}
-
-.FerrariGT3 p{
-  width: 45%;
-  text-align: left;
-  margin-left: 35%;
-  margin-top: -15%;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-
-   #intresse {
-      background-color: #4CAF50;
-      color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    #intresse:hover {
-      background-color: #45a049;
-    }
-
-    #intresse:active {
-      transform: scale(0.98);
-    }
-  
-
-}
 
 footer{
   background-color: #041932;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 footer p{
@@ -171,9 +150,4 @@ footer p{
   margin-left: 30%;
   color: #FFFCFC;
   font-size: 10px;
-
-}
-
-#intresse{
-  cursor: pointer;
 }
