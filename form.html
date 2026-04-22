@@ -11,7 +11,21 @@
       rel="stylesheet"
     />
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.js"></script>
+        <script
+      src="https://kit.fontawesome.com/ee65abec29.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+  <header class="bar">
+    <h2>GT3 Shop</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="car.html">Shop</a>
+      <a href="form.html">
+        <button>Kontakta</button>
+      </a>
+    </nav>
+  </header>
   <body>
     <div class="underblock">
       <h1>Kontakta oss</h1>
@@ -25,7 +39,12 @@
           <input type="text" placeholder="Skriv in ditt efternamn.." required />
 
           <label>Mail</label>
-          <input type="”mail”" placeholder="Skriv in din mail.." required />
+          <input
+            type="”email”"
+            name="email"
+            placeholder="Skriv in din mail.."
+            required
+          />
 
           <label>Meddelande</label>
           <input
@@ -45,7 +64,6 @@
       <button id="hem" type="submit">Gå till hemsidan</button>
     </form>
 
-    <footer>
       <div class="mapfooter">
         <script>
           mapboxgl.accessToken =
@@ -58,6 +76,18 @@
           });
         </script>
       </div>
-    </footer>
+    
   </body>
+      <footer>
+    <div class="footer"></div>
+    <p>
+      <ul>
+      <li>Kontakt Viktor.Soderquist@skola.taby.se</li>
+        <li>Tele 070-123 45 67</li>
+        <li>Adress Åva gymnasium, Enhagsvägen 2, 183 64 Täby </li>
+        <li>Info Vi svarar vanligtvis inom 24timmar på vardagar.</li>
+        <li> © 2026 Alla rättigheter förbehållna</li>
+      </ul>
+    </p>
+  </footer>
 </html>
