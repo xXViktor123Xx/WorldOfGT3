@@ -1,3 +1,4 @@
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,164 +11,162 @@ body{
 .bar {
   position: sticky;
   top: 0;
-  width: 98.35%; 
-  background: rgba(0, 0, 0, 0.9);
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 10px;
-  z-index: 100;
+  width:97%;
+  background: rgba(0,0,0,0.9);
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1.5% 2%;
+  z-index:100;
+  flex-wrap:wrap;
 }
 
 .bar nav {
-  display: flex; 
-  align-items: center;
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
 }
 
 .bar h2 {
-  margin: 0;
+  margin:0;
+  font-size:3vw;
 }
 
 .bar a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
+  color:white;
+  text-decoration:none;
+  margin-left:2%;
+  font-size:2vw;
 }
 
 .bar a:hover {
-  text-decoration: none;
-  color:rgb(239, 222, 201)
+  color:rgb(239,222,201);
 }
-
 
 .bar button {
-  background: none;
-  border: none;
-  color: white;
-  font: inherit;        
-  cursor: pointer;
+  background:none;
+  border:none;
+  color:white;
+  font:inherit;
+  cursor:pointer;
 }
 
-
 .header {
-  position: relative;
-  display: flex;
+  position:relative;
+  display:flex;
 }
 
 .header h1 {
-  position: absolute;
-  top: 15%;
-  width: 100%;
-  text-align: center;
-  color: #FFFCFC;
-  font-size: 90px;
-  margin: 0;
+  position:absolute;
+  top:15%;
+  width:100%;
+  text-align:center;
+  color:#FFFCFC;
+  font-size:8vw;
+  margin:0;
 }
 
 .header p {
-  position: absolute;
-  top: 30%;
-  width: 100%;
-  text-align: center;
-  color: rgb(41, 54, 91);
-  font-size: 50px;
-  margin: 0;
+  position:absolute;
+  top:30%;
+  width:100%;
+  text-align:center;
+  color:rgb(41,54,91);
+  font-size:4vw;
+  margin:0;
 }
 
 h3{
-  color: aliceblue;
-  text-align: center;
-  font-size: 60px;
+  color:aliceblue;
+  text-align:center;
+  font-size:6vw;
 }
 
-
-#Porsche { 
-  width: 100%; 
-  height: 565px; 
-  object-fit: cover;
+#Porsche {
+  width:100%;
+  height:auto;
+  display:block;
 }
-
 
 .porsche911,
 .FerrariGT3 {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  max-width: 600px;
+  display:flex;
+  align-items:center;
+  gap:3%;
+  width:100%;
+  max-width:600px;
 }
 
 .Bilar {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin: 20px;
+  display:flex;
+  justify-content:center;
+  gap:2%;
+  flex-wrap:wrap;
+  width:100%;
+  margin:2%;
 }
 
 #Porsche992,
-#FerrariGT3,#M720S,#Ford,#Lambo
- {
-  width: 300px;
-  height: 200px;
-  border-radius: 15px;
-  background-size: cover;
-  background-position: center;
+#FerrariGT3,
+#M720S,
+#Ford,
+#Lambo {
+  width:90%;
+  max-width:300px;
+  aspect-ratio:3/2;
+  height:auto;
+  border-radius:15px;
+  background-size:cover;
+  background-position:center;
 }
 
 #Porsche992 {
-  background-image: url("../images/Porsche992.jpg");
-  cursor: pointer;
+  background-image:url("../images/Porsche992.jpg");
+  cursor:pointer;
 }
 
 #Porsche992:hover {
-  background-image: url("../images/911.gif");
-  cursor: pointer;
+  background-image:url("../images/911.gif");
 }
 
 #FerrariGT3 {
-  background-image: url("../images/FerrariRedBull.webp");
-  cursor: pointer;
+  background-image:url("../images/FerrariRedBull.webp");
+  cursor:pointer;
 }
 
 #FerrariGT3:hover {
-  background-image: url("../images/RedBullFerrari.gif");
-  cursor: pointer;
+  background-image:url("../images/RedBullFerrari.gif");
 }
 
 #M720S{
-  background-image: url("../images/720SGT3.jpg");
-  cursor: pointer;
+  background-image:url("../images/720SGT3.jpg");
 }
 
 #Ford{
-  background-image: url("../images/FORDGT3.jpeg");
-  cursor: pointer;
+  background-image:url("../images/FORDGT3.jpeg");
 }
 
 #Lambo{
-  background-image: url("../images/lamborghini.webp");
-  cursor: pointer;
+  background-image:url("../images/lamborghini.webp");
 }
 
-
 footer{
-  background-color: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  background-color:#000;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:2%;
 }
 
 .footer p{
-  position: absolute;
-  text-align: center;
-  margin-left: 30%;
-  color: rgb(255, 252, 252);
-  font-size: 10px;
+  text-align:center;
+  margin:0;
+  color:rgb(255,252,252);
+  font-size:2.5vw;
 }
 
 ul{
-  color: aliceblue;
-  list-style: none;
+  color:aliceblue;
+  list-style:none;
 }
