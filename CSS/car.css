@@ -92,6 +92,25 @@ body{
   cursor:pointer;
 }
 
+.cart{
+  position: fixed;
+  right: 20px;
+  top: 120px;
+  width: 250px;
+  background: #111;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.cart h2{
+  margin-top: 0;
+  text-align: center;
+}
+
+
+
 
 .sökmotor {
   display: flex;
@@ -136,7 +155,7 @@ input, select {
 }
 
 .card p, h2{
-  color:beige
+  color:rgb(255, 255, 255)
 }
 
 button {
