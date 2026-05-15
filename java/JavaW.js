@@ -1,7 +1,6 @@
 const search = document.getElementById("search");
 const brandFilter = document.getElementById("brandFilter");
 const sortSelect = document.getElementById("sort");
-const shop = document.getElementById("shop");
 
 
 
